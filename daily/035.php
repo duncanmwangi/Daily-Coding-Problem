@@ -39,12 +39,12 @@ function solution($num=1000){
 }
 
 function solutionC($n)
-	{
-		$first = $last = 1;
-		for ($i=3; $i <= $n ; $i++) { 
-			$temp = $last;
-			$last = $last + $first;
-			$first = $temp;
-		}
-		return $last;
-	}
+{
+    $first = $last = 1;
+    for ($i=3; $i <= $n ; $i++) {
+        $temp = $last;
+        $last = $last + $first;
+        $first = $temp;
+    }
+    return $last;
+}
